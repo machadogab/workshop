@@ -1,0 +1,17 @@
+{
+  "name": "workshop-ages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.11.3",
+    "restify": "^5.0.1",
+    "restify-plugins": "^1.6.0"
+  }
+}

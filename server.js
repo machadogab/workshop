@@ -83,12 +83,18 @@ server.get('/', (req, res, next) => {
 })
 
 
-server.get('/persons', (request, response, next) => {
+server.get('/person', (request, response, next) => {
     Person.find({}, (err, doc) => {
         if (err) return response.send(500, err)
 
         response.send(200, doc)
     })
+})
+
+server.post('/person', (request, response, next) => {
+    console.log(request.body)
+
+    response.send(200)
 })
 
 server.listen(port, () => {

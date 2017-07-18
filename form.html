@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Workshop</title>
+</head>
+<body>
+
+	<form method="POST" action="http://localhost:8888/person">
+		<input type="text" name="name" placeholder="Nome">
+		<input type="text" name="age" placeholder="Idade">
+		<input type="submit">
+	</form>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			$('form').submit(function(){
+				window.location = 'http://localhost:8888/person';
+				return false;
+			});
+		});
+	</script>	
+</body>
+</html>
